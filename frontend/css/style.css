@@ -6,6 +6,7 @@ body {
     background-color: #f9f9f9;
     margin: 0;
     padding: 0;
+<<<<<<< HEAD
   }
   
   /* Estilo para el encabezado */
@@ -24,6 +25,13 @@ body {
   /* Estilo para la barra de navegación */
   nav {
     background-color: #3498db;
+=======
+    background-color: #000000; 
+}
+
+header {
+    background-color: #510178; 
+>>>>>>> 811bd2143fb44befd3386cef22227daa7dd119f2
     color: #fff;
     text-align: center;
     padding: 10px 0;
@@ -42,6 +50,7 @@ body {
   nav ul li a {
     color: #fff;
     text-decoration: none;
+<<<<<<< HEAD
     font-size: 16px;
   }
   
@@ -112,3 +121,65 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
   
+=======
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: background-color 0.3s;
+}
+
+a:hover {
+    background-color: #fff; 
+    color: #6a0dad; 
+}
+
+.imgPrincipal img {
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    border-radius: 60%;
+    margin-top: 20px;
+}
+
+#crearUsuarioForm {
+    background-color: #0757be;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 20px 0;
+}
+
+
+#eliminarUsuarioForm{
+    background-color: #c70808;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 20px 0;
+}
+
+#jugarForm{
+    background-color: #28d548;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 20px ;
+}
+
+#adminLoginForm{
+    background-color: #670aa0;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 20px 0;
+}
+
+input[type="submit"] {
+    background-color: #044696;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #000000;
+}
+>>>>>>> 811bd2143fb44befd3386cef22227daa7dd119f2

@@ -24,6 +24,7 @@
                 </div>
             </li>
             <li>
+<<<<<<< HEAD
                 <a href="#" id="crearPalabraLink" style="text-decoration: none; color: #007bff; font-weight: bold;">Crear Palabra</a>
                 <div id="crearPalabraForm" style="display:none; margin-top: 20px;">
                     <h2 style="color: #007bff; margin-bottom: 15px;">Crear Palabra</h2>
@@ -36,6 +37,47 @@
                     </form>
                 </div>
             </li>
+=======
+                <a href="#" id="crearPreguntaLink" style="text-decoration: none; color: #007bff; font-weight: bold;">Crear Pregunta</a>
+                <div id="crearPreguntaForm" style="display:none; margin-top: 20px;">
+                    <h2 style="color: #007bff; margin-bottom: 15px;">Crear Pregunta</h2>
+                    <form action="../../../backend/pregunta/crear-pregunta.php" method="post">
+                        <div style="margin-bottom: 10px;">
+                            <label for="pregunta" style="font-weight: bold; color: #555;">Pregunta:</label><br>
+                            <input type="text" id="pregunta" name="pregunta" style="width: 100%; padding: 5px; border-radius: 5px; border: 1px solid #ccc;">
+                        </div>
+                        <div style="margin-bottom: 10px;">
+                            <label for="respuestaA" style="font-weight: bold; color: #555;">Respuesta A:</label><br>
+                            <input type="text" id="respuestaA" name="respuestaA" style="width: 100%; padding: 5px; border-radius: 5px; border: 1px solid #ccc;">
+                        </div>
+                        <div style="margin-bottom: 10px;">
+                            <label for="respuestaB" style="font-weight: bold; color: #555;">Respuesta B:</label><br>
+                            <input type="text" id="respuestaB" name="respuestaB" style="width: 100%; padding: 5px; border-radius: 5px; border: 1px solid #ccc;">
+                        </div>
+                        <div style="margin-bottom: 10px;">
+                            <label for="respuestaC" style="font-weight: bold; color: #555;">Respuesta C:</label><br>
+                            <input type="text" id="respuestaC" name="respuestaC" style="width: 100%; padding: 5px; border-radius: 5px; border: 1px solid #ccc;">
+                        </div>
+                        <div style="margin-bottom: 10px;">
+                            <label for="respuestaCorrecta" style="font-weight: bold; color: #555;">Respuesta Correcta:</label><br>
+                            <select id="respuestaCorrecta" name="respuestaCorrecta" style="width: 100%; padding: 5px; border-radius: 5px; border: 1px solid #ccc;">
+                                <option value="1">A</option>
+                                <option value="2">B</option>
+                                <option value="3">C</option>
+                            </select>
+                        </div>
+                        <input type="submit" value="Crear" style="background-color: #007bff; color: #fff; padding: 8px 15px; border: none; border-radius: 5px; cursor: pointer;">
+                    </form>
+                </div>
+                
+                    </form>
+                </div>
+            </li>
+            <li>
+            
+                </ul>
+            </li>
+>>>>>>> 811bd2143fb44befd3386cef22227daa7dd119f2
         </ul>
     </nav>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
