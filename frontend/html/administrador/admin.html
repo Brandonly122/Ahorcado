@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crear Pregunta</title>
+    <title>Administrar Palabras del Ahorcado</title>
     <link rel="stylesheet" href="../../css/admin.css">
 </head>
 <body>
@@ -24,34 +24,17 @@
                 </div>
             </li>
             <li>
-                <a href="#" id="crearPreguntaLink">Crear Pregunta</a>
-                <div id="crearPreguntaForm" style="display:none;">
-                    <h2>Crear Pregunta</h2>
+                <a href="#" id="crearPalabraLink" style="text-decoration: none; color: #007bff; font-weight: bold;">Crear Palabra</a>
+                <div id="crearPalabraForm" style="display:none; margin-top: 20px;">
+                    <h2 style="color: #007bff; margin-bottom: 15px;">Crear Palabra</h2>
                     <form action="../../../backend/pregunta/crear-pregunta.php" method="post">
-                        <label for="pregunta">Pregunta:</label><br>
-                        <input type="text" id="pregunta" name="pregunta"><br><br>
-                        <label for="respuestaA">Ingrese respuesta de A:</label><br>
-                        <input type="text" id="respuestaA" name="respuestaA"><br><br>
-                        <label for="respuestaB">Ingrese respuesta de B:</label><br>
-                        <input type="text" id="respuestaB" name="respuestaB"><br><br>
-                        <label for="respuestaC">Ingrese respuesta de C:</label><br>
-                        <input type="text" id="respuestaC" name="respuestaC"><br><br>
-                        <label for="respuestaCorrecta">Cuál es la respuesta correcta?</label><br>
-                        <select id="respuestaCorrecta" name="respuestaCorrecta">
-                            <option value="1">A</option>
-                            <option value="2">B</option>
-                            <option value="3">C</option>
-                        </select><br><br>
-                        <input type="submit" value="Crear">
+                        <div style="margin-bottom: 10px;">
+                            <label for="palabra" style="font-weight: bold; color: #555;">Palabra:</label><br>
+                            <input type="text" id="palabra" name="palabra" style="width: 100%; padding: 5px; border-radius: 5px; border: 1px solid #ccc;">
+                        </div>
+                        <input type="submit" value="Crear" style="background-color: #007bff; color: #fff; padding: 8px 15px; border: none; border-radius: 5px; cursor: pointer;">
                     </form>
                 </div>
-            </li>
-            <li>
-                <a href="#">Opciones de Preguntas</a>
-                <ul class="sub-menu">
-                    <li><a href="#">Eliminar Preguntas</a></li>
-                    <li><a href="#">Mostrar Preguntas</a></li>
-                </ul>
             </li>
         </ul>
     </nav>
@@ -59,15 +42,15 @@
     <script>
         $(document).ready(function(){
             $('#eliminarUsuarioForm').hide();
-            $('#crearPreguntaForm').hide();
+            $('#crearPalabraForm').hide();
 
             $('#eliminarUsuarioLink').click(function(){
                 $('#eliminarUsuarioForm').slideToggle();
-                $('#crearPreguntaForm').hide(); // Oculta el formulario de crear pregunta si se muestra
+                $('#crearPalabraForm').hide(); // Oculta el formulario de crear palabra si se muestra
             });
 
-            $('#crearPreguntaLink').click(function(){
-                $('#crearPreguntaForm').slideToggle();
+            $('#crearPalabraLink').click(function(){
+                $('#crearPalabraForm').slideToggle();
                 $('#eliminarUsuarioForm').hide(); // Oculta el formulario de eliminar usuario si se muestra
             });
         });

@@ -3,11 +3,11 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #930be7;
+    background-color: #000000;
 }
 
 header {
-    background-color: #3907a6;
+    background-color: #252526ba;
     color: rgb(247, 247, 247);
     text-align: center;
     padding: 20px 0;
@@ -26,12 +26,12 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #13cf84;
+    color: #10d237;
     text-decoration: none;
 }
 
 nav ul li a:hover {
-    color: #2501c4;
+    color: #797405;
 }
 
 main {
@@ -43,7 +43,7 @@ main {
 #jugar {
     font-size: 36px; /* Hacer el texto más grande */
     padding: 20px 40px; /* Aumentar el padding para hacer el botón más grande */
-    background-color: #20c826;
+    background-color: #bf7805;
     color: rgb(248, 250, 255);
     border: none;
     border-radius: 5px;
@@ -56,7 +56,7 @@ main {
 }
 
 #jugar:hover {
-    background-color: #09ed37;
+    background-color: #0cba6f;
 }
 
 #configurar-preguntas {
@@ -79,8 +79,18 @@ main {
 .ImgJuego img {
     display: block;
     margin: 0 auto;
-    width: 14%; /* Ajusta este valor según lo necesites */
+    width: 40%; /* Ajusta este valor según lo necesites */
     border-radius: 12%;
     margin-top: 20px;
 }
 
+.palabra {
+    display: flex;
+}
+.letra {
+    width: 30px; /* Ajusta el ancho según tu preferencia */
+    text-align: center;
+}
+.formulario {
+    margin-top: 20px; /* Ajusta el margen superior según tu preferencia */
+}

@@ -2,30 +2,25 @@
 include('../conexion.php');
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $pregunta = mysqli_real_escape_string($con, $_POST["pregunta"]);
-    $res1= mysqli_real_escape_string($con, $_POST["respuestaA"]);
-    $res2= mysqli_real_escape_string($con, $_POST["respuestaB"]);
-    $res3= mysqli_real_escape_string($con, $_POST["respuestaC"]);
-    $val= mysqli_real_escape_string($con, $_POST["respuestaCorrecta"]);
+    $palabra = mysqli_real_escape_string($con, $_POST["palabra"]);
 
     $errores = array();
 
-    if (empty($pregunta)) {
-        $errores['pregunta'] = "La pregunta no puede estar vacío";
+    if (empty($palabra)) {
+        $errores['palabra'] = "La palabra no puede estar vacía";
     }
   
     if (empty($errores)) {
-        $sql = "INSERT INTO Preguntas (descripcionPregunta) VALUES ('$pregunta');
-        CALL proc_insertar_respuestas((SELECT MAX(idPregunta) FROM preguntas), '$res1', '$res2', '$res3', '$val');";
-        
+        // Llamada al procedimiento almacenado para insertar la palabra en la tabla PalabrasAhorcado
+        $sql = "CALL proc_insertar_palabra('$palabra')";
 
-        if ($con->multi_query($sql) === TRUE) {
-            echo "New record created successfully";
+        if ($con->query($sql) === TRUE) {
+            echo "Palabra creada exitosamente";
         } else {
-            echo "Error: " . $sql . "<br>" . $mysqli->error;
+            echo "Error: " . $sql . "<br>" . $con->error;
         }
     } else {
-        echo "Por favor, proporcione una pregunta.";
+        echo "Por favor, proporcione una palabra.";
     }
 }
 $con->close();

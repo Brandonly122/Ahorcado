@@ -1,0 +1,101 @@
+/* Estilos CSS para el juego del ahorcado */
+body {
+  background-color: rgb(10, 5, 74);
+}
+
+/* Estilo para el contenedor principal */
+.palabra-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #0c2ac2;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(3, 56, 129, 0.1);
+}
+
+/* Estilo para el título */
+h2 {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #f4b909;
+}
+
+/* Estilo para las letras de la palabra oculta */
+.palabra {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.letra {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-color: #10aff3;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 5px;
+  line-height: 30px;
+  text-align: center;
+  font-size: 16px;
+}
+
+/* Estilo para el formulario */
+.formulario {
+  text-align: center;
+}
+
+.formulario label {
+  font-size: 18px;
+}
+
+.formulario input[type="text"] {
+  width: 30px;
+  padding: 5px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.formulario button {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.formulario button:hover {
+  background-color: #45a049;
+}
+
+/* Estilo para el mensaje de error */
+.error {
+  color: #f44336;
+  margin-bottom: 20px;
+}
+
+/* Estilo para el muñeco del ahorcado */
+.muñeco {
+  text-align: center;
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+.muñeco pre {
+  margin: 0;
+}
+
+.muñeco .parte {
+  opacity: 0; /* Inicialmente oculto */
+  transition: opacity 5s ease; /* Transición suave */
+}
+/* Define animación para mostrar gradualmente las partes del muñeco */
+@keyframes aparecer {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}

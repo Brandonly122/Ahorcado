@@ -1,89 +1,114 @@
+/* Estilos CSS más bonitos con colores vibrantes para los formularios */
 
-
+/* Estilo para el cuerpo de la página */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
     margin: 0;
     padding: 0;
-    background-color: #180455; 
-}
-
-header {
-    background-color: #20019c; 
+  }
+  
+  /* Estilo para el encabezado */
+  header {
+    background-color: #2ecc71;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Estilo para el título */
+  h1 {
+    margin: 0;
+  }
+  
+  /* Estilo para la barra de navegación */
+  nav {
+    background-color: #3498db;
     color: #fff;
     text-align: center;
-    padding: 20px 0; 
-}
-
-h1 {
-    margin: 0;
-    padding: 0;
-    font-size: 28px; 
-    color: #9f8fab; 
-}
-
-nav {
-    background-color: #56069d; 
     padding: 10px 0;
-    text-align: center;
-}
-
-ul {
+  }
+  
+  nav ul {
     list-style-type: none;
     padding: 0;
-    margin: 0;
-}
-
-li {
-    display: inline-block; 
-    margin: 0 10px; 
-}
-
-a {
-    color: #fff; 
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    color: #fff;
     text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 20px;
-    transition: background-color 0.3s;
-}
-
-a:hover {
-    background-color: #fff; 
-    color: #6a0dad; 
-}
-
-.imgPrincipal img {
-    display: block;
-    margin: 0 auto;
-    width: 50%;
-    border-radius: 60%;
-    margin-top: 20px;
-}
-
-#crearUsuarioForm {
-    background-color: #0757be;
-    padding: 20px;
-    border-radius: 20px;
-    margin: 20px 0;
-}
-
-
-#eliminarUsuarioForm{
-    background-color: #c70808;
-    padding: 20px;
-    border-radius: 20px;
-    margin: 20px 0;
-}
-
-#jugarForm{
-    background-color: #28d548;
-    padding: 20px;
-    border-radius: 20px;
-    margin: 20px ;
-}
-
-#adminLoginForm{
-    background-color: #670aa0;
-    padding: 20px;
-    border-radius: 20px;
-    margin: 20px 0;
-}
+    font-size: 16px;
+  }
+  
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Estilo para los formularios */
+  #crearUsuarioForm,
+  #jugarForm,
+  #adminLoginForm {
+    display: none;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin-top: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  #crearUsuarioForm h2,
+  #jugarForm h2,
+  #adminLoginForm h2 {
+    margin-top: 0;
+  }
+  
+  label {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  input[type="text"],
+  input[type="password"],
+  input[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    background-color: #f5f5f5;
+  }
+  
+  input[type="submit"] {
+    background-color: #2ecc71;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #27ae60;
+  }
+  
+  /* Estilo para la imagen principal */
+  .imgPrincipal {
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .imgPrincipal img {
+    max-width: 50%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
